@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>解决方案</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="layui/css/layui.css"  media="all">
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<link rel="stylesheet" type="text/css" href="css/media.css">
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="percentage">
+				
+			<div class="nav_box">
+				
+			<div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+           <div class="titlew">
+               <h3>海南圣源实业发展有限公司</h3>
+           </div>
+           
+           <div class="nav">
+           	
+           	<ul>
+                  <li><a href="index.html">首页</a></li>
+                  <li><a href="#" style="color:#08d49f;">解决方案</a></li>
+                  <li><a href="product_center.html">产品中心</a></li>
+                  <li><a href="agent_cooperation.html">代理合作</a></li>
+                  <li><a href="about.html">关于我们</a></li>
+                  <li><a href="#">进入店铺</a></li>
+            </ul>
+           	
+           </div>
+
+        <div class="login_box">
+            <span class="login"><a href="login.html">登录</a></span>
+            <span class="register"><a href="register.html">注册</a></span>
+        </div>
+        
+        
+	</div>      
+	<!--nav_box结束-->
+	
+	<div class="nav_yc_box">
+		 <ul class="nav_ul">
+        	      <li><a href="index.html">首页</a></li>
+                  <li><a href="#">解决方案</a></li>
+                  <li><a href="resolvent.html">产品中心</a></li>
+                  <li><a href="agent_cooperation.html">代理合作</a></li>
+                  <li><a href="about.html">关于我们</a></li>
+                  <li><a href="#">进入店铺</a></li>
+        		  <li><a href="login.html">登录</a></li>
+                  <li><a href="register.html">注册</a></li>
+         </ul>
+	</div>
+	
+	
+	
+	
+	<div class="layui-carousel" id="test1">
+		  <div carousel-item>
+		    <div><img src="img/分析现状.png"/></div>
+		    <div><img src="img/分析现状.png"/></div>
+		    <div><img src="img/分析现状.png"/></div>
+		    <div><img src="img/分析现状.png"/></div>
+		    <div><img src="img/分析现状.png"/></div>
+		  </div>
+		</div>
+	    <!--轮播结束-->
+				
+		<div class="title">
+          	<h2>分析现在</h2>
+        </div>		
+				
+		<div class="analysis_img">
+        	<img src="img/分析现状.png"/>
+        </div>
+				
+		<div class="analysis_txet">
+        			<div class="col-4">
+        				<h2>人力问题</h2>
+        				<div class="analysis_img">
+        					<img src="img/支付问题.png"/>
+        				</div>
+        			</div>
+        			<div class="col-4">
+        				<h2>单子问题</h2>
+        				<div class="analysis_img">
+        					<img src="img/支付问题.png"/>
+        				</div>
+        			</div>
+        			<div class="col-4">
+        				<h2>支付问题</h2>
+        				<div class="analysis_img">
+        					<img src="img/支付问题.png"/>
+        				</div>
+        			</div>
+        		</div>
+				
+				
+				<div class="bottom">
+         		<ul class="bottom_ul col-6">
+         			<li>1</li>
+         			<li>2</li>
+         			<li>3</li>
+         			<li>4</li>
+         		</ul>
+         		<div class="bottom_div col-6">
+         			<div class="bottom_right">
+         			<div class="bottom_div_img">
+         				<img src="img/公众号.png"/>
+         			</div>
+                    <div class="bottom_text">
+                    	<p>微信公众号</p>
+         				<p>下载知道APP</p>
+         			    <p>随时随地咨询</p>
+                    </div>
+         			</div>
+
+         		</div>
+         		
+         	</div>
+			
+			<div id="Gotop" class="gotop">
+				<img src="img/top.png" />
+		    </div>
+			
+			</div><!--percentage结束-->
+		</div><!--box结束-->
+		
+		<script type="text/javascript" src="./layui/layui.js"></script>
+		
+		<script>
+			layui.use('carousel', function(){
+			  var carousel = layui.carousel;
+			  //建造实例
+			  carousel.render({
+			    elem: '#test1'
+			    ,width: '100%' //设置容器宽度
+			    ,arrow: 'always' //始终显示箭头
+			    //,anim: 'updown' //切换动画方式
+			  });
+			});
+			
+			$(window).scroll(function() {
+				if($(window).scrollTop() > 200) {
+					$("#Gotop").show();
+				} else {
+					$("#Gotop").hide();
+				}
+			});
+			$("#Gotop").click(function() {
+				$("html,body").animate({
+					"scrollTop": 0
+				}, 800);
+			});
+			
+		</script>
+	</body>
+</html>
